@@ -1,3 +1,49 @@
 body {
-    background: red;
+    background: #FFEAC5;
 }
+
+aside {
+    float: left;
+    background: #C68FE6;
+    width: 20%;
+    padding: 2.5%;
+    height: 100vh;
+    color: #fff
+    border-right: 5px solid #4d4d4d;
+}
+
+aside img {
+    width: 80px;
+    float: left;
+}
+
+aside .logo {
+    font-size: 60px;
+    margin-left: 40px;
+    font-weight: bold;
+    position: relative;
+    top: -5px;
+}
+
+aside ul {list-style: none}
+aside ul li {
+    display:block;
+    margin-top: 5px;
+    transition: transform .1s ease;
+}
+
+aside ul li:hover, aside ul:hover {
+    color: #000000
+    text-decoration: none;
+    transform: scale(1.05);
+}
+
+main .features {
+
+    color: #fff
+    margin-top: 100px;
+    text-align: center;
+    width: 100%
+}
+
+main .features h1 {font-size: 60px}
