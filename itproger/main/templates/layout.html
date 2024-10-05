@@ -14,17 +14,19 @@
 </head>
 <body>
     <aside>
-
-            <img src="{% static 'main/img/instagram.svg' %}">
-            <span class="logo"></span>
-            <h2 style="color: black">Instagrame</h2>
+        <div style="display: flex;">
+            <div><img src="{% static 'main/img/instagram.svg' %}"></div>
+                <div style="padding: 17px 0 0 15px"><h2 style="color: black">Instagrame</h2></div>
+        </div>
 
         <ul>
             <a href="{% url 'home' %}"><li><i class="bi bi-house" style="color: #ff00f7"></i>Main</li></a>
             <a href="{% url 'about' %}"><li><i class="bi bi-search" style="color: #ff00f7"></i>About us</li></a>
             <a href="{% url 'contacts' %}"><li><i class="bi bi-person-lines-fill" style="color: #ff00f7"></i>Contacts</li></a>
+            <a href="{% url 'news_home' %}"><li><i class="bi bi-newspaper" style="color: #ff00f7"></i>Новости</li></a>
             <a href="{% url 'twitch' %}"><li><i class="bi bi-twitch" style="color: #ff00f7"></i>Our Twitch</li></a>
             <a href="{% url 'tg' %}"><li><i class="bi bi-telegram" style="color: #ff00f7"></i>Our TG</li></a>
+            <a href="{% url 'create' %}"><li><button class="bi bi-info" style="color: #black"><i class = 'bi bi-news'></i> Add new news</li></a>
         </ul>
     </aside>
     <main>
