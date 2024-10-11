@@ -3,17 +3,13 @@
 {% block title %}Новости{% endblock %}
 
 {% block content %}
-    <a style="color:black; font-size:50px">Новости</a>
-
-       {% if news %}
+    <div style="color:black; font-size:50px" class="features">
+        <h1>Носости на сайте</h1>
             {% for el in news %}
                 <div class = "alert">
                     <h3>{{ el.tittle }}</h3>
                     <p>{{ el.anons }}</p>
                 </div>
             {% endfor %}
-       {% else %}
-            <p>тут нет ничего</p>
-       {% endif %}
-    {{news}}
+    </div>
 {% endblock %}

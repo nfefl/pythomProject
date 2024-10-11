@@ -3,16 +3,19 @@
 {% block title %}Форма по добавлению{% endblock %}
 
 {% block content %}
-    <a style="color:black; font-size:50px">Форма по добавлению</a>
+<div class="features">
+    <h1 style="color:black; font-size:50px">Форма по добавлению</h1>
         <form method="post">
+            {% csrf_token %}
+            {{ form }}
             <input type="text" placeholder="Название статьи" class="form-control"><br>
             <input type="text" placeholder="Анонс" class="form-control"><br>
             <textarea class="form-control" placeholder="Текст статьи"></textarea><br>
             <input type="date" placeholder="Дата" class="form-control"><br>
             <input type="time" placeholder="Время" class="form-control"><br>
-            <a class="btn btn-success" type="submit" >Добавить </a>
-
+            <button class="btn btn-success" type="submit" >Добавить </button>
 
         </form>
     {{news}}
+</div>
 {% endblock %}

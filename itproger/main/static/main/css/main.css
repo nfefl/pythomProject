@@ -40,11 +40,16 @@ aside ul li:hover, aside ul:hover {
 
 main .features {
 
-    color: #fff
-    margin-top: 100px;
+    color: #ffffff
+    margin-top: 10px;
     text-align: center;
     width: 100%
 }
 
 main .features h1 {font-size: 60px}
+
+aside .sidebar {
+position: fixed;
+left: 0;
+}
 
