@@ -23,5 +23,5 @@ urlpatterns = [
     path('about', views.about, name='about'),
     path('contacts', views.contacts, name='contacts'),
     path('tg', views.tg, name='tg'),
-    path('twitch', views.twitch, name='twitch')
+    path('twitch', views.twitch, name='twitch'),
 ]

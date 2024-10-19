@@ -21,5 +21,5 @@ from . import views
 urlpatterns = [
     path('', views.news_home, name='news_home'),
     path('create', views.create, name='create'),
-
+    path('inews', views.INews_home, name='inews_home'),
 ]

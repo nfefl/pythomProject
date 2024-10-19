@@ -4,12 +4,12 @@
 
 {% block content %}
     <div style="color:black; font-size:50px" class="features">
-        <h1>Новости на сайте</h1>
-            {% for el in news %}
+        <h1>Срочные новости</h1>
+            {% for el in inews %}
                 <div class = "alert" >
                     <h3>{{ el.tittle }}</h3>
                     <p>{{ el.anons }}</p>
                 </div>
             {% endfor %}
-
+    </div>
 {% endblock %}
