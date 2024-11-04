@@ -19,3 +19,9 @@ def puzzle(request):
 
 def music(request):
     return render(request, 'music.html')
+
+def acc(request):
+    return render(request, 'acc.html')
+
+def card(request):
+    return render(request, 'card.html')

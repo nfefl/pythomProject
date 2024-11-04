@@ -25,5 +25,6 @@ urlpatterns = [
     path('sub', views.sub, name='sub'),
     path('puzzle', views.puzzle, name='puzzle'),
     path('music', views.music, name='music'),
-
+    path('acc', views.acc, name='acc'),
+    path('card', views.card, name='card'),
 ]

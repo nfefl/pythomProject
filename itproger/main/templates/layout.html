@@ -20,7 +20,9 @@
 <header>
     <nav class="header-nav">
         <div class="logo">
+            <a href="{% url 'home' %}">
             <img src="{% static 'main/img/rhythmeriddle.png' %}">
+            </a>
         </div>
         <div class="menu2">
         <ul class="menu">
@@ -31,13 +33,17 @@
             <li><a href="{% url 'sub' %}">Подписка</a></li>
         </ul>
         </div>
-        <div class="header-language">
-            <a href="#">Русский</a>
-        </div>
-        <div class="header-user-icon">
-            <img src="{% static 'main/img/user-icon.png' %}" alt="User Icon"> <!-- Replace with your user icon path -->
-        </div>
     </nav>
+
+    <select id="country">
+        <option value="russia">Россия</option>
+        <option value="usa">США</option>
+    </select>
+    <div class="header-user-icon">
+        <a href="{% url 'acc' %}">
+            <img src="{% static 'main/img/user-icon.png' %}" />
+            </a>
+    </div>
 </header>
 <main>
     {% block content %}

@@ -1,33 +1,42 @@
-/* Header Styling */
 header {
-    background-color: #ffffff; /* White background for a clean look */
-    border-bottom: 1px solid #e0e0e0; /* Subtle border to separate the header */
+    background-color: #ffffff;
+    border-bottom: 1px solid #e0e0e0;
     padding: 10px 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     position: sticky;
     top: 0;
-    z-index: 1000; /* Ensures the header stays above other content */
+    z-index: 1000;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 .header-nav {
     width: 100%;
 }
 
-/* Logo */
-.header-logo img {
-    width:100px;
+.logo img {
+    width:150px;
+    height:50px;
+    margin-left:50px;
+    position:relative;
+    top:20px;
 }
 
-/* Navigation Menu */
 .header-nav .menu {
     display: flex;
     list-style: none;
-    gap: 20px; /* Space between each menu item */
+    gap: 20px;
     justify-content:center;
-    width:100%;
+    width:80%;
+    margin-left:200px;
+    position:relative;
+    top:-12px;
 }
 
 header-nav .menu li {
@@ -37,48 +46,48 @@ header-nav .menu li {
 
 .header-nav .menu li a {
     text-decoration: none;
-    color: #333; /* Dark color for text */
-    font-weight: 500; /* Medium weight for readability */
-    transition: color 0.3s; /* Smooth transition for hover effect */
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s;
 }
 
 .header-nav .menu li a:hover {
-    color: #0077cc; /* Change to a blue shade on hover */
+    color: #0077cc;
     transform: scale(1.05);
 }
 
-/* Language Selector */
-.header-language {
+select#country {
     font-size: 14px;
-    margin-left: 20px;
-    color: #555; /* Grey color for a softer look */
+    margin-right: 20px;
+    color: #555;
     cursor: pointer;
     transition: color 0.3s;
-    float:right;
+    float:left;
 
 }
 
 .header-language:hover {
-    color: #0077cc; /* Blue shade on hover */
+    color: #0077cc;
 }
 
-/* User Icon */
 .header-user-icon img {
-    height: 35px; /* Size of the user icon */
+    height: 35px;
     width: 35px;
-    border-radius: 50%; /* Makes the icon circular */
+    border-radius: 50%;
     cursor: pointer;
     float:right;
 }
 
-/* Responsive Header */
 @media (max-width: 768px) {
     header-nav .menu {
-        flex-direction: column; /* Stack menu items vertically on small screens */
-        gap: 10px; /* Reduce space between items */
+        flex-direction: column;
+        gap: 10px;
     }
 
     .header-language, .user-icon {
-        display: none; /* Hide language and user icon on smaller screens */
+        display: none;
     }
 }
+
+
+
