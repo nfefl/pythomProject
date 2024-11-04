@@ -1,0 +1,24 @@
+{% extends 'layout.html' %}
+{% load static %}
+{% block extrastyles %}
+    <link rel="stylesheet" href="{% static 'main/css/puzzle.css' %}">
+{% endblock %}
+{% block content %}
+    <div>
+        <section class="task-selection">
+            <button class="stats-button">Статистика</button>
+            <h2>Выберите задание</h2>
+            <p>На сегодня осталось задания: 3/3</p>
+            <div class="tasks">
+                <div class="task-placeholder"></div>
+                <div class="task-placeholder"></div>
+                <div class="task-placeholder"></div>
+            </div>
+            <button class="start-task">Начать задание</button>
+            <p class="subscription-prompt">
+                С нашей подпиской, вы получите возможность выполнять больше ежедневных и ещё большими наградами.
+                <a href="#">Приобрести подписку</a>
+            </p>
+        </section>
+    </div>
+{% endblock %}

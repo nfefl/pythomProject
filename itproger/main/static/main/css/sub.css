@@ -1,0 +1,140 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img {
+    height: 40px; /* Adjust as needed */
+}
+
+nav .menu {
+    display: flex;
+    list-style: none;
+}
+
+nav .menu li {
+    margin: 0 15px;
+}
+
+nav .menu li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.language {
+    font-size: 14px;
+}
+
+main {
+    padding: 20px;
+}
+
+.subscription-status {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.subscription-status h1 {
+    font-size: 2rem;
+    margin: 10px 0;
+}
+
+.subscription-status p {
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.subscription-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.cancel-btn, .change-btn {
+    background-color: #00aaff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.cancel-btn:hover, .change-btn:hover {
+    background-color: #008ecc;
+}
+
+.promo-text {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.toggle-options {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.toggle-options button {
+    border: 1px solid #ddd;
+    background-color: #fff;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.toggle-options button:hover {
+    background-color: #f0f0f0;
+}
+
+.plans {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.plan {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    width: 250px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.plan h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.original-price {
+    text-decoration: line-through;
+    color: #999;
+    margin-bottom: 5px;
+}
+
+.discount-price {
+    font

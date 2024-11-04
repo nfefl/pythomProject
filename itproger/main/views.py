@@ -2,19 +2,20 @@ from django.shortcuts import render
 from django.http import HttpResponse
 
 # Create your views here.
-def index(request):
+def home(request):
     data = {
-        'tittle': 'Instagrame'
+        'tittle': 'Rhythme Riddle'
     }
-    return render(request, 'index.html', data)
-def about(request):
-    return render(request, 'about.html')
-
-def contacts(request):
-    return render(request, 'contacts.html')
-
-def tg(request):
-    return render(request, 'tg.html')
+    return render(request, 'home.html', data)
 
 def twitch(request):
     return render(request, 'twitch.html')
+def playlists(request):
+    return render(request, 'playlists.html')
+def sub(request):
+    return render(request, 'sub.html')
+def puzzle(request):
+    return render(request, 'puzzle.html')
+
+def music(request):
+    return render(request, 'music.html')

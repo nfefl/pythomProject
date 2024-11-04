@@ -20,13 +20,14 @@ class ArticlesForm(ModelForm):
                 'class': 'form-control',
                 'placeholder': 'Полный текст',
             }),
-            "date": DateTimeInput(attrs={
-                'class': 'form-control',
-                'placeholder': 'Дата',
-            }),
             "make": Select(attrs={
                 'class': 'form-control',
                 'placeholder': 'Тип',
             }),
+            "date": DateTimeInput(attrs={
+                'class': 'form-control',
+                'placeholder': 'гггг-мм-дд чч:мм:сек',
+            }),
 
         }
+

@@ -1,0 +1,84 @@
+/* Header Styling */
+header {
+    background-color: #ffffff; /* White background for a clean look */
+    border-bottom: 1px solid #e0e0e0; /* Subtle border to separate the header */
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Ensures the header stays above other content */
+}
+
+
+.header-nav {
+    width: 100%;
+}
+
+/* Logo */
+.header-logo img {
+    width:100px;
+}
+
+/* Navigation Menu */
+.header-nav .menu {
+    display: flex;
+    list-style: none;
+    gap: 20px; /* Space between each menu item */
+    justify-content:center;
+    width:100%;
+}
+
+header-nav .menu li {
+    display: inline;
+}
+
+
+.header-nav .menu li a {
+    text-decoration: none;
+    color: #333; /* Dark color for text */
+    font-weight: 500; /* Medium weight for readability */
+    transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+.header-nav .menu li a:hover {
+    color: #0077cc; /* Change to a blue shade on hover */
+    transform: scale(1.05);
+}
+
+/* Language Selector */
+.header-language {
+    font-size: 14px;
+    margin-left: 20px;
+    color: #555; /* Grey color for a softer look */
+    cursor: pointer;
+    transition: color 0.3s;
+    float:right;
+
+}
+
+.header-language:hover {
+    color: #0077cc; /* Blue shade on hover */
+}
+
+/* User Icon */
+.header-user-icon img {
+    height: 35px; /* Size of the user icon */
+    width: 35px;
+    border-radius: 50%; /* Makes the icon circular */
+    cursor: pointer;
+    float:right;
+}
+
+/* Responsive Header */
+@media (max-width: 768px) {
+    header-nav .menu {
+        flex-direction: column; /* Stack menu items vertically on small screens */
+        gap: 10px; /* Reduce space between items */
+    }
+
+    .header-language, .user-icon {
+        display: none; /* Hide language and user icon on smaller screens */
+    }
+}

@@ -5,34 +5,64 @@
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" >
-    <title>{% block title %} {%endblock%}</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="{% static 'main/css/main.css' %}">
+    <link rel="stylesheet" href="{% static 'main/css/footer.css' %}">
+    <link rel="stylesheet" href="{% static 'main/css/header.css' %}">
+    <link rel="stylesheet" href="{% static 'main/css/layout.css' %}">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css">
+    {% block extrastyles %}
+    {% endblock %}
+
 </head>
 <body>
-    <aside>
-        <div style="display: flex;">
-            <div><img src="{% static 'main/img/instagram.svg' %}"></div>
-                <div style="padding: 17px 0 0 15px"><h2 style="color: black">Instagrame</h2></div>
+<header>
+    <nav class="header-nav">
+        <div class="logo">
+            <img src="{% static 'main/img/rhythmeriddle.png' %}">
         </div>
-
-        <ul>
-            <a href="{% url 'home' %}"><li><i class="bi bi-house" style="color: #ff00f7"></i>Main</li></a>
-            <a href="{% url 'about' %}"><li><i class="bi bi-search" style="color: #ff00f7"></i>About us</li></a>
-            <a href="{% url 'contacts' %}"><li><i class="bi bi-person-lines-fill" style="color: #ff00f7"></i>Contacts</li></a>
-            <a href="{% url 'news_home' %}"><li><i class="bi bi-newspaper" style="color: #ff00f7"></i>Новости</li></a>
-            <a href="{% url 'twitch' %}"><li><i class="bi bi-twitch" style="color: #ff00f7"></i>Our Twitch</li></a>
-            <a href="{% url 'tg' %}"><li><i class="bi bi-telegram" style="color: #ff00f7"></i>Our TG</li></a>
-            <a href="{% url 'create' %}"><li><button class="bi bi-info" style="color: #ff00f7"><i class = 'bi bi-news'></i> Add news </li></a>
-
+        <div class="menu2">
+        <ul class="menu">
+            <li><a href="{% url 'puzzle' %}">Пазлы</a></li>
+            <li><a href="{% url 'music' %}">Музыка</a></li>
+            <li><a href="{% url 'home' %}">Главная</a></li>
+            <li><a href="{% url 'playlists' %}">Плейлисты</a></li>
+            <li><a href="{% url 'sub' %}">Подписка</a></li>
         </ul>
-    </aside>
-    <main>
-        {% block content %}
-        {% endblock %}
-    </main>
+        </div>
+        <div class="header-language">
+            <a href="#">Русский</a>
+        </div>
+        <div class="header-user-icon">
+            <img src="{% static 'main/img/user-icon.png' %}" alt="User Icon"> <!-- Replace with your user icon path -->
+        </div>
+    </nav>
+</header>
+<main>
+    {% block content %}
+    {% endblock %}
+</main>
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-logo">
+            <img src="{% static 'main/img/rhythmeriddle.png' %}">
+        </div>
+        <div class="footer-links">
+            <a href="#">О нас</a>
+            <a href="#">Реклама</a>
+            <a href="#">Пользовательское соглашение</a>
+            <a href="#">Подписка</a>
+            <a href="#">Поддержка</a>
+        </div>
+        <div class="footer-socials">
+            <a href="https://www.youtube.com/@fanderplay2757"><img src="static/main/img/yt.png" alt="YouTube"></a>
+            <a href=""><img src="static/main/img/twitter.png" alt="Twitter"></a>
+            <a href="https://vk.com/marshavella69"><img src="static/main/img/vk.png" alt="VK"></a>
+            <a href="https://t.me/nfefl"><img src="static/main/img/tg1.png" alt="Telegram"></a>
+        </div>
+    </div>
+    <p class="footer-copyright">РитмРиддл © 2024. Все права защищены.</p>
+</footer>
 </body>
 </html>

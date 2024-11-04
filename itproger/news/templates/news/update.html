@@ -6,16 +6,16 @@
 
 {% block content %}
 <div class="features">
-    <h1 style="color:black; font-size:50px">Форма по добавлению</h1>
-        <form method="post" enctype="multipart/form-data" style="padding-left: -10px">
+    <h1 style="color:black; font-size:50px">Форма по изменению</h1>
+        <form method="post">
             {% csrf_token %}
-
             {{ form.tittle }}<br>
             {{ form.anons }}<br>
             {{ form.full_text }}<br>
             {{ form.make }}<br>
             {{ form.date }}<br>
-            <button class="btn btn-info" type="submit" >Добавить </button>
+            {{ form.image }}<br>
+            <button class="btn btn-info" type="submit" >Изменить </button>
             <span>{{ error }}</span>
         </form>
     {{news}}

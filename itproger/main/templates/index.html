@@ -1,12 +1,15 @@
 {% extends 'layout.html' %}
+{% load static %}
 
-{% block title %}Instagrame{% endblock %}
+{% block title %}Rhythm Riddle{% endblock %}
 
 {% block content %}
     <div class="features">
         <h1>{{ tittle }}</h1>
         <p></p>
-        <button class="btn btn-danger" href="{% url 'twitch' %}">Куда</button>
+        <div style="display: flex; margin-left: 40px;">
+            <img src="{% static '' %}" style="width:1400px; padding:50px">
+        </div>
     </div>
 
     {% include 'test.html' %}

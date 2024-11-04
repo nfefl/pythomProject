@@ -1,14 +1,19 @@
 {% extends 'layout.html' %}
+{% load static %}
 
 {% block title %}Новости{% endblock %}
 
 {% block content %}
-    <div style="color:black; font-size:50px" class="features">
+<div style="color:black; font-size:25px" class="features">
         <h1>Новости на сайте</h1>
             {% for el in news %}
-                <div class = "alert" >
+                <div class = "alert alert-warning" >
                     <h3>{{ el.tittle }}</h3>
                     <p>{{ el.anons }}</p>
+
+                    <img src="{{item.image.url}}" alt="">
+
+                    <div><a href="{% url 'news-detail' el.id %}" class="btn btn-warning ">Читать</a></div>
                 </div>
             {% endfor %}
 

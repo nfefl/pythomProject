@@ -2,14 +2,14 @@ from django.db import models
 
 
 class Make(models.Model):
-    name = models.CharField(max_length=50, verbose_name='Тип новостей')
+    name = models.CharField(max_length=50, verbose_name='Категория музыки')
 
     def __str__(self):
         return self.name
 
     class Meta:
-        verbose_name = 'Тип новостей'
-        verbose_name_plural = 'Тип новостей'
+        verbose_name = 'Категория музыки'
+        verbose_name_plural = 'Категория музыки'
 
 
 class Articles(models.Model):
@@ -19,13 +19,16 @@ class Articles(models.Model):
     date = models.DateTimeField('Время')
     make = models.ForeignKey(Make, on_delete=models.CASCADE, verbose_name='Тип')
 
+
     def __str__(self):
         return f'{self.make}'
+
+    def get_absolute_url(self):
+        return f'/news/{self.id}'
 
     class Meta:
         verbose_name = "Новость"
         verbose_name_plural = 'Новости'
-
 
 class INews(models.Model):
     tittle = models.CharField('Название', max_length=50, default='Важно')

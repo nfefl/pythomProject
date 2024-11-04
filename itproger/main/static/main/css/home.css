@@ -1,0 +1,171 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img {
+    height: 40px; /* Adjust as needed */
+}
+
+nav .menu {
+    display: flex;
+    list-style: none;
+}
+
+nav .menu li {
+    margin: 0 15px;
+}
+
+nav .menu li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.language, .user-icon {
+    font-size: 14px;
+    margin-left: 20px;
+}
+
+main {
+    padding: 20px;
+}
+
+.highlight {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.highlight-image img {
+    width: 100%;
+    max-width: 300px; /* Adjust image size as needed */
+    border-radius: 10px;
+}
+
+.highlight-info h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.highlight-info h2 {
+    font-size: 1.5rem;
+    color: #666;
+}
+
+.highlight-info .save-btn {
+    background-color: #00aaff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.highlight-info .save-btn:hover {
+    background-color: #008ecc;
+}
+
+.highlight-info .play-count {
+    display: block;
+    margin-top: 10px;
+    color: #888;
+}
+
+.song-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.song-item, .playlist-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+    width: 100%;
+    max-width: 150px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.player .track-info {
+    color: #ccc;
+}
+
+.controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.control-btn {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.volume-control input[type="range"] {
+    width: 100px;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.links, .social-media {
+    display: flex;
+    gap: 15px;
+}
+
+.links a, .social-media a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.social-media i {
+    font-size: 20px;
+}
+
+.copyright {
+    text-align: center;
+    font-size: 14px;
+    color: #ccc;
+}
