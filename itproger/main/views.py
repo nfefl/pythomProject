@@ -25,3 +25,6 @@ def acc(request):
 
 def card(request):
     return render(request, 'card.html')
+
+def quiz(request):
+    return render(request, 'quiz.html')

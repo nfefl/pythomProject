@@ -40,17 +40,41 @@ main {
 }
 
 .cancel-btn, .change-btn {
-    background-color: #00aaff;
+    height:50px;
+    width:250px;
+    background-color: #00A0FF;
     color: #fff;
-    border: none;
-    padding: 10px 20px;
+    top:100px;
+    padding: 10px;
     border-radius: 5px;
-    font-size: 16px;
     cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    border-radius: 20px;
+    border: 1px solid #0088FF;
 }
 
 .cancel-btn:hover, .change-btn:hover {
-    background-color: #008ecc;
+    background-color: #0088FF;
+}
+
+.subscribe-btn {
+    height:50px;
+    width:200px;
+    background-color: #00A0FF;
+    color: #fff;
+    top:100px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    border-radius: 20px;
+    border: 1px solid #0088FF;
+    text-align:center;
+}
+
+.subscribe-btn:hover {
+    background-color: #0088FF;
 }
 
 .promo-text {
@@ -73,7 +97,7 @@ main {
 }
 
 .toggle-options button:hover {
-    background-color: #f0f0f0;
+    background-color: #0088FF;
 }
 
 .plans {
@@ -86,10 +110,10 @@ main {
 .plan {
     background-color: #fff;
     border: 1px solid #ddd;
-    border-radius: 5px;
+    border-radius: 20px;
     padding: 20px;
     text-align: center;
-    width: 250px;
+    width: 300px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
@@ -105,4 +129,4 @@ main {
 }
 
 .discount-price {
-    font
+    font}

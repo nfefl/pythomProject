@@ -53,17 +53,17 @@ main {
 }
 
 .highlight-info .save-btn {
-    background-color: #00aaff;
+    padding: 10px 20px;
+    background-color: #00A0FF;
     color: #fff;
     border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
+    border-radius: 20px;
     cursor: pointer;
     margin-left:50px;
 }
 
 .highlight-info .save-btn:hover {
-    background-color: #008ecc;
+    background-color: #0088FF;
 }
 
 .highlight-info .play-count {

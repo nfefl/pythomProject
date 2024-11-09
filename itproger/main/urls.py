@@ -20,11 +20,12 @@ from . import views
 
 urlpatterns = [
     path('', views.home, name='home'),
-    path('twitch    ', views.twitch, name='twitch'),
+    path('twitch', views.twitch, name='twitch'),
     path('playlists', views.playlists, name='playlists'),
     path('sub', views.sub, name='sub'),
     path('puzzle', views.puzzle, name='puzzle'),
     path('music', views.music, name='music'),
     path('acc', views.acc, name='acc'),
     path('card', views.card, name='card'),
+    path('quiz', views.quiz, name='quiz'),
 ]

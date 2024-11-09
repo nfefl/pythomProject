@@ -11,8 +11,12 @@
     background-color: #00A0FF;
     color: #fff;
     border: none;
-    border-radius: 5px;
+    border-radius: 20px;
     cursor: pointer;
+}
+
+.stats-button:hover {
+    background-color: #0088FF;
 }
 
 .tasks {
@@ -34,8 +38,12 @@
     background-color: #00A0FF;
     color: #fff;
     border: none;
-    border-radius: 5px;
+    border-radius: 20px;
     cursor: pointer;
+}
+
+.start-task:hover {
+    background-color: #0088FF;
 }
 
 .subscription-prompt {

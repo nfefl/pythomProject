@@ -24,14 +24,14 @@
             <img src="{% static 'main/img/rhythmeriddle.png' %}">
             </a>
         </div>
-        <div class="menu2">
         <ul class="menu">
-            <li><a href="{% url 'puzzle' %}">Пазлы</a></li>
-            <li><a href="{% url 'music' %}">Музыка</a></li>
-            <li><a href="{% url 'home' %}">Главная</a></li>
-            <li><a href="{% url 'playlists' %}">Плейлисты</a></li>
-            <li><a href="{% url 'sub' %}">Подписка</a></li>
+            <li><a href="{% url 'puzzle' %}" class="nav-link active">Пазлы</a></li>
+            <li><a href="{% url 'music' %}" class="nav-link">Музыка</a></li>
+            <li><a href="{% url 'home' %}" class="nav-link">Главная</a></li>
+            <li><a href="{% url 'playlists' %}" class="nav-link">Плейлисты</a></li>
+            <li><a href="{% url 'sub' %}" class="nav-link">Подписка</a></li>
         </ul>
+
         </div>
     </nav>
 
